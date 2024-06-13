@@ -1,6 +1,8 @@
 package homework.day5.playground.essence.creatures;
 
-public class Insect extends Animal{
+import homework.day5.playground.essence.Flyable;
+
+public abstract class Insect extends Animal{
     protected String name;
 
     public Insect(int mass, String name, String name1) {

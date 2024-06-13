@@ -19,5 +19,4 @@ public class Copter extends AirCraft {
     public void setName(String name) {
         this.name = name;
     }
-
 }

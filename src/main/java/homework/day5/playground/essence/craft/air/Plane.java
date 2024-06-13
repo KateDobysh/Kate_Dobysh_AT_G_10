@@ -17,4 +17,5 @@ public class Plane extends AirCraft {
     public void setName(String name) {
         this.name = name;
     }
+
 }

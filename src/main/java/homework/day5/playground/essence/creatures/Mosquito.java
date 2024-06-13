@@ -19,4 +19,10 @@ public class Mosquito extends Insect implements Flyable {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public void fly(String direction) {
+
+        String print = String.format("I am %s, my name is %s and I am flying to %s", Mosquito.this.name, getName(), direction);
+    }
 }
