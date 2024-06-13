@@ -1,6 +1,6 @@
 package homework.day5.playground.essence.craft.hand;
 
-public class Can extends Container {
+public class Can extends Container implements Storable{
     protected String name;
 
     public Can(int mass, String name, String name1) {
