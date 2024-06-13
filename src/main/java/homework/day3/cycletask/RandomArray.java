@@ -1,4 +1,4 @@
-package main.java.homework.day3;
+package homework.day3.cycletask;
 
 import java.util.Random;
 

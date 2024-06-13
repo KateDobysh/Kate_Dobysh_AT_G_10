@@ -1,4 +1,4 @@
-package main.java.project.bubbles;
+package project.bubbles;
 
 public abstract class Water {
     public int color;
