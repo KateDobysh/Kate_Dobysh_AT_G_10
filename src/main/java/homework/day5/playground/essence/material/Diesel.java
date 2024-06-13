@@ -1,6 +1,6 @@
 package homework.day5.playground.essence.material;
 
-public class Diesel implements Pourable{
+public class Diesel implements Pourable, Powerable{
     protected String name;
 
     public Diesel(String name) {
