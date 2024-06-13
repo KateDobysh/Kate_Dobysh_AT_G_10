@@ -1,4 +1,4 @@
-package main.java.homework.day1.pretask;
+package homework.day1.pretask;
 
 public class VariableExample {
     public static void main(String[] args){

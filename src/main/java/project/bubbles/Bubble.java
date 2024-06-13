@@ -1,4 +1,4 @@
-package main.java.project.bubbles;
+package project.bubbles;
 
 public class Bubble {
     public double volume = 0.3;

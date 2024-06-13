@@ -1,4 +1,4 @@
-package main.java.project.bubbles;
+package project.bubbles;
 
 public class SparklingWater extends Water {
     int sparkles;

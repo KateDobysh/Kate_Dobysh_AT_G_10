@@ -1,4 +1,4 @@
-package main.java.homework.day4;
+package homework.day4;
 
 public class ArraysTrain {
     int[] array = {3, 2, 3, 4, 5};
