@@ -16,5 +16,10 @@ public class Insect extends Animal{
     public void setName(String name) {
         this.name = name;
     }
-}
 
+    public void eat(Insect food){
+
+        String print = String.format("I am %s and I am eating %s", getName(), food.getName());
+        System.out.println(print);
+    }
+}
