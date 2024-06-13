@@ -1,6 +1,8 @@
 package homework.day5.playground.essence.creatures;
 
-public class Mosquito extends Insect {
+import homework.day5.playground.essence.Flyable;
+
+public class Mosquito extends Insect implements Flyable {
     protected String name;
 
     public Mosquito(int mass, String name, String name1, String name2) {
