@@ -5,7 +5,7 @@ import java.util.Random;
 public class DirectionGenerator {
     public static void generateDirection() {
         Random randomValue = new Random();
-        int randomVal = randomValue.nextInt(1 - 40);
+        int randomVal = randomValue.nextInt(39) + 1;
         if (randomVal <= 9 && randomVal >= 1) {
             System.out.println("North");
         }
@@ -24,4 +24,11 @@ public class DirectionGenerator {
         DirectionGenerator generateDirection = new DirectionGenerator();
         generateDirection.fly();
     }
+
+    public void move(){
+        DirectionGenerator generateDirection = new DirectionGenerator();
+        generateDirection.move();
+    }
+
+
 }

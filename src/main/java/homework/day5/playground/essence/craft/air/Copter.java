@@ -1,6 +1,6 @@
 package homework.day5.playground.essence.craft.air;
 
-public class Copter extends AirCraft {
+public class Copter extends AirCraft{
     protected String name;
 
     public Copter(int mass, String name, String name1) {
@@ -16,5 +16,10 @@ public class Copter extends AirCraft {
     @Override
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public int move(int pointA, int pointB) {
+        return 0;
     }
 }
