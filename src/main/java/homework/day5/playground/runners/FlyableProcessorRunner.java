@@ -1,41 +1,47 @@
 package homework.day5.playground.runners;
 
 import homework.day5.playground.essence.Flyable;
-import homework.day5.playground.essence.craft.Transportable;
+import homework.day5.playground.essence.craft.air.AirCraft;
 import homework.day5.playground.essence.craft.air.Copter;
 import homework.day5.playground.essence.craft.air.Plane;
 import homework.day5.playground.essence.craft.air.Rocket;
-import homework.day5.playground.essence.craft.field.*;
+import homework.day5.playground.essence.creatures.Fly;
+import homework.day5.playground.essence.creatures.Insect;
+import homework.day5.playground.essence.creatures.Mosquito;
 import homework.day5.playground.processors.FlyableProcessor;
 
 public class FlyableProcessorRunner {
     public static void main(String[] args){
         FlyableProcessor flyableProcessor = new FlyableProcessor();
-        Transportable transportableCopter = new Copter(223, "AW109 Transportable");
-        Transportable transportablePlane = new Plane(3452, "Airbus a380 Transportable");
-        Transportable transportableRocket = new Rocket(7623, "Soyuz-FG Transportable");
-        Transportable transportableCar = new Car(23, "Tesla X Transportable");
-        Transportable transportableMoped = new Moped(12, "Honda EM1 Transportable");
-        Transportable transportableMotorbike = new Motorbike(12, "Suzuki GSX-R1000 Transportable");
-        Aircraft aircraftCopter = new Copter(223, "AW109 Aircraft");
-        Aircraft aircraftPlane = new Plane(3452, "Airbus a380 Aircraft");
-        Aircraft aircraftRocket = new Rocket(7623, "Soyuz-FG Aircraft");
-        Vehicle vehicleCar = new Car(23, "Tesla X Vehicle");
-        Vehicle vehicleMoped = new Moped(12, "Honda EM1 Vehicle");
-        Vehicle vehicleMotorbike = new Motorbike(12, "Suzuki GSX-R1000 Vehicle");
-        Flyable flyableCopter = new Copter(223, "AW109 Flyable");
-        Flyable flyablePlane = new Plane(3452, "Airbus a380 Flyable");
-        Flyable flyableRocket = new Rocket(7623, "Soyuz-FG Flyable");
-        Rideable rideableCar = new Car(23, "Tesla X Rideable");
-        Rideable rideableMoped = new Moped(12, "Honda EM1 Rideable");
-        Rideable rideableMotorbike = new Motorbike(12, "Suzuki GSX-R1000 Rideable");
-        Copter aCopter = new Copter(223, "AW109 Copter");
-        Plane aPlane = new Plane(3452, "Airbus a380 Plane");
-        Rocket aRocket = new Rocket(7623, "Soyuz-FG Rocket");
-        Car aCar = new Car(23, "Tesla X Car");
-        Moped aMoped = new Moped(12, "Honda EM1 Moped");
-        Motorbike aMotorbike = new Motorbike(12, "Suzuki GSX-R1000 Motorbike");
+        Flyable flyableCopter = new Copter(223, "Mi8 Flyable", "");
+        Flyable flyablePlane = new Plane(3452, "Boeing 837 Flyable", "");
+        Flyable flyableRocket = new Rocket(7623, "Super Heavy Flyable", "");
+        Flyable flyableFly = new Fly(23, "Domestica Flyable", "", "");
+        Flyable flyableMosquito = new Mosquito(12, "Vulgaris Flyable", "", "");
+        AirCraft aircraftCopter = new Copter(223, "Mi8 Aircraft", "");
+        AirCraft aircraftPlane = new Plane(3452, "Boeing 837 Aircraft", "");
+        AirCraft aircraftRocket = new Rocket(7623, "Super Heavy Aircraft", "");
+        Insect insectFly = new Fly(23, "Domestica Insect", "", "");
+        Insect insectMosquito = new Mosquito(12, "Vulgaris Insect", "", "");
+        Copter aCopter = new Copter(223, "Mi8 Copter", "");
+        Plane aPlane = new Plane(3452, "Boeing 837 Plane", "");
+        Rocket aRocket = new Rocket(7623, "Super Heavy Rocket", "");
+        Fly aFly = new Fly(23, "Domestica Fly", "", "");
+        Mosquito aMosquito = new Mosquito(12, "Vulgaris Mosquito", "", "");
 
-
+        flyableProcessor.runFlyable(flyableCopter);
+        flyableProcessor.runFlyable(flyablePlane);
+        flyableProcessor.runFlyable(flyableRocket);
+        flyableProcessor.runFlyable(flyableFly);
+        flyableProcessor.runFlyable(flyableMosquito);
+        flyableProcessor.runFlyable(aircraftCopter);
+        flyableProcessor.runFlyable(aircraftPlane);
+        flyableProcessor.runFlyable(aircraftRocket);
+        flyableProcessor.runFlyable((Flyable) insectFly);
+        flyableProcessor.runFlyable((Flyable) insectMosquito);
+        flyableProcessor.runFlyable(aCopter);
+        flyableProcessor.runFlyable(aPlane);
+        flyableProcessor.runFlyable(aFly);
+        flyableProcessor.runFlyable(aMosquito);
     }
 }

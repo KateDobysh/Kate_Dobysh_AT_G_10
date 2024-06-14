@@ -19,4 +19,9 @@ public abstract class AirCraft extends Matter implements Flyable, Transportable 
     public void setName(String name) {
         this.name = name;
     }
+
+    public void fly(String direction) {
+
+        String print = String.format("I am %s, my name is %s and I am flying to %s", this.name, getName(), direction);
+    }
 }

@@ -1,9 +1,6 @@
 package homework.day5.playground.essence.craft.air;
 
-import homework.day5.playground.essence.Flyable;
-import homework.day5.playground.essence.creatures.Fly;
-
-public class Plane extends AirCraft implements Flyable {
+public class Plane extends AirCraft{
     protected String name;
 
     public Plane(int mass, String name, String name1) {
@@ -19,12 +16,6 @@ public class Plane extends AirCraft implements Flyable {
     @Override
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public void fly(String direction) {
-
-        String print = String.format("I am %s, my name is %s and I am flying to %s", Plane.this.name, getName(), direction);
     }
 
 }
