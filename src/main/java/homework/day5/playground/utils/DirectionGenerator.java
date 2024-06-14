@@ -24,4 +24,11 @@ public class DirectionGenerator {
         DirectionGenerator generateDirection = new DirectionGenerator();
         generateDirection.fly();
     }
+
+    public void move(){
+        DirectionGenerator generateDirection = new DirectionGenerator();
+        generateDirection.move();
+    }
+
+
 }
