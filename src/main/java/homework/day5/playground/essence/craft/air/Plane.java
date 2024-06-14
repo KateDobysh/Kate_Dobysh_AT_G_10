@@ -18,4 +18,10 @@ public class Plane extends AirCraft{
         this.name = name;
     }
 
+
+    @Override
+    public int move(int pointA, int pointB) {
+        return 0;
+    }
+
 }

@@ -17,4 +17,9 @@ public class Rocket extends AirCraft{
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public int move(int pointA, int pointB) {
+        return 0;
+    }
 }
