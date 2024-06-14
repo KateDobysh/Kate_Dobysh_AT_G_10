@@ -37,11 +37,18 @@ public class FlyableProcessorRunner {
         flyableProcessor.runFlyable(aircraftCopter);
         flyableProcessor.runFlyable(aircraftPlane);
         flyableProcessor.runFlyable(aircraftRocket);
-        flyableProcessor.runFlyable((Flyable) insectFly);
-        flyableProcessor.runFlyable((Flyable) insectMosquito);
+
+// метод runFlyable не смог принять на вход объекты:
+//        flyableProcessor.runFlyable(insectFly);
+//        flyableProcessor.runFlyable(insectMosquito);
+
         flyableProcessor.runFlyable(aCopter);
         flyableProcessor.runFlyable(aPlane);
+        flyableProcessor.runFlyable(aRocket);
         flyableProcessor.runFlyable(aFly);
         flyableProcessor.runFlyable(aMosquito);
+
+        flyableProcessor.runFlyable(aMosquito, "никуда");
+        flyableProcessor.runFlyable(aCopter, "повсюду");
     }
 }
