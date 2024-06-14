@@ -1,7 +1,5 @@
 package homework.day5.playground.essence.craft.air;
 
-import homework.day5.playground.essence.Flyable;
-
 public class Copter extends AirCraft {
     protected String name;
 
@@ -19,5 +17,4 @@ public class Copter extends AirCraft {
     public void setName(String name) {
         this.name = name;
     }
-
 }

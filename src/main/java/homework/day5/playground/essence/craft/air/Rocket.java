@@ -1,6 +1,6 @@
 package homework.day5.playground.essence.craft.air;
 
-public class Rocket extends AirCraft {
+public class Rocket extends AirCraft{
     protected String name;
 
     public Rocket(int mass, String name, String name1) {

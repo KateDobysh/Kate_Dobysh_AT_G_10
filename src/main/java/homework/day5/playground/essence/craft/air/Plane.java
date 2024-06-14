@@ -1,6 +1,6 @@
 package homework.day5.playground.essence.craft.air;
 
-public class Plane extends AirCraft {
+public class Plane extends AirCraft{
     protected String name;
 
     public Plane(int mass, String name, String name1) {
@@ -17,4 +17,5 @@ public class Plane extends AirCraft {
     public void setName(String name) {
         this.name = name;
     }
+
 }
