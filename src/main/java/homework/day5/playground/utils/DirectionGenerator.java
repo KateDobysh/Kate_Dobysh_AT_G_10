@@ -3,21 +3,22 @@ package homework.day5.playground.utils;
 import java.util.Random;
 
 public class DirectionGenerator {
-    public static void generateDirection() {
-        Random randomValue = new Random();
-        int randomVal = randomValue.nextInt(39) + 1;
-        if (randomVal <= 9 && randomVal >= 1) {
+    public static String generateDirection() {
+        Random randomDirection = new Random();
+        int randomDir = randomDirection.nextInt(39) + 1;
+        if (randomDir <= 9 && randomDir >= 1) {
             System.out.println("North");
         }
-        if (randomVal <= 19 && randomVal >= 10) {
+        if (randomDir <= 19 && randomDir >= 10) {
             System.out.println("South");
         }
-        if (randomVal <= 29 && randomVal >= 20) {
+        if (randomDir <= 29 && randomDir >= 20) {
             System.out.println("West");
         }
-        if (randomVal <= 39 && randomVal >= 30) {
+        if (randomDir <= 39 && randomDir >= 30) {
             System.out.println("East");
         }
+        return "";
     }
 
     public void fly() {
@@ -25,7 +26,7 @@ public class DirectionGenerator {
         generateDirection.fly();
     }
 
-    public void move(){
+    public void move() {
         DirectionGenerator generateDirection = new DirectionGenerator();
         generateDirection.move();
     }

@@ -3,19 +3,29 @@ package homework.day5.playground.essence.creatures;
 public class Beetle extends Insect implements Crawlable {
     protected String name;
 
-    public Beetle(int mass, String name, String name1, String name2) {
-        super(mass, name, name1);
-        this.name = name2;
+    public Beetle(int mass, String name) {
+        super(mass);
+        this.name = name;
     }
 
-    @Override
+
     public String getName() {
         return name;
     }
 
-    @Override
+
     public void setName(String name) {
         this.name = name;
+    }
+
+
+    public int getMass() {
+        return mass;
+    }
+
+
+    public void setMass(int mass) {
+        this.mass = mass;
     }
 
     public void nest(Carrot home) {
@@ -24,8 +34,8 @@ public class Beetle extends Insect implements Crawlable {
         int intpart = (int) (carrotMass / beetleMass);
         if (beetleMass < carrotMass) {
 
-            String print = String.format("I am %s and I will nest there with %d my family members", getName(), intpart);
-            System.out.println(print);
+            System.out.printf("I am %s and I will nest there with %d my family members\n", getName(), intpart);
+
         } else {
             System.out.println("This carrot is too small for nesting :(");
         }

@@ -24,8 +24,7 @@ public class Carrot extends Vegetable {
         int intpart = (int) (carrotMass/beetleMass);
         if (beetleMass < carrotMass) {
 
-            String print = String.format("I am %s and I will nest there with %d my family members", getName(), intpart);
-            System.out.println(print);
+            System.out.printf("I am %s and I will nest there with %d my family members\n", getName(), intpart);
         } else {
             System.out.println("This carrot is too small for nesting :(");
         }
