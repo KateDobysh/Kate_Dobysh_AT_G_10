@@ -3,18 +3,30 @@ package homework.day5.playground.essence.creatures;
 public class Pigeon extends Vertebrata {
     protected String name;
 
-    public Pigeon(String name, String name1) {
-        super(name);
-        this.name = name1;
+    public Pigeon(int mass, String name) {
+        super(mass);
+        this.name = name;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
+    public int getMass() {
+        return mass;
+    }
+
+
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setMass(int mass) {
+        this.mass = mass;
+    }
+
+    public void eat(Plant food){
+
+        System.out.printf("I am %s and I am eating %s\n", getName(), food.getName());
     }
 }

@@ -5,24 +5,32 @@ import homework.day5.playground.essence.Flyable;
 public class Mosquito extends Insect implements Flyable {
     protected String name;
 
-    public Mosquito(int mass, String name, String name1, String name2) {
-        super(mass, name, name1);
-        this.name = name2;
+    public Mosquito(int mass, String name) {
+        super(mass);
+        this.name = name;
     }
 
-    @Override
+
     public String getName() {
         return name;
     }
 
-    @Override
+    public int getMass() {
+        return mass;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
-    @Override
+
+    public void setMass(int masse) {
+        this.mass = mass;
+    }
+
+
     public void fly(String direction) {
 
-        String print = String.format("I am %s, my name is %s and I am flying to %s", Mosquito.this.name, getName(), direction);
+        System.out.printf("I am %s, my name is %s and I am flying to %s\n", getClass().getSimpleName(), name, direction);
     }
 }

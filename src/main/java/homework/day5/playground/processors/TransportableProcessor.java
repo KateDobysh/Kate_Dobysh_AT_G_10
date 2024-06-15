@@ -9,15 +9,15 @@ import homework.day5.playground.utils.DirectionGenerator;
 public class TransportableProcessor {
     public void runTransportable(Transportable transportable, int pointA, int pointB) {
         int distance = transportable.move(pointA, pointB);
-        String print = String.format("Transportable %s was moved to %d points", transportable.getClass().getSimpleName(), distance);
-        System.out.println(print);
+        System.out.println();
+        System.out.printf("Transportable %s was moved to %d points\n", transportable.getClass().getSimpleName(), distance);
     }
 
     public void runTransportable(Transportable transportable) {
         int pointA = CoordinatesGenerator.generateCoordinate();
         int pointB = CoordinatesGenerator.generateCoordinate();
         int distance = transportable.move(pointA, pointB);
-        String print = String.format("Transportable %s was moved to %d points", transportable.getClass().getSimpleName(), distance);
-        System.out.println(print);
+        System.out.println();
+        System.out.printf("Transportable %s was moved to %d points\n", transportable.getClass().getSimpleName(), distance);
     }
 }
