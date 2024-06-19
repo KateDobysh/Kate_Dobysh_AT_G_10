@@ -3,9 +3,9 @@ package homework.day5.playground.essence.creatures;
 public class Rose extends Flower {
     protected String name;
 
-    public Rose(int mass, String name, String name1) {
-        super(mass, name);
-        this.name = name1;
+    public Rose(int mass, String name) {
+        super(mass);
+        this.name = name;
     }
 
     @Override

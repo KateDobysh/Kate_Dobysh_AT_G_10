@@ -47,5 +47,4 @@ public class Copter extends AirCraft implements Flyable, Transportable {
     public void move(String direction) {
 
     }
-
 }
