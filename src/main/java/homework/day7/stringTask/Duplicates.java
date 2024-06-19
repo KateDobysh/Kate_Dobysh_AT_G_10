@@ -13,5 +13,6 @@ public class Duplicates {
                 }
             }
         }
+        System.out.println(duplicates);
     }
 }
