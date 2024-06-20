@@ -13,6 +13,7 @@ import homework.day5.playground.processors.FlyableProcessor;
 public class FlyableProcessorRunner {
     public static void main(String[] args) {
         FlyableProcessor flyableProcessor = new FlyableProcessor();
+
         Flyable flyableCopter = new Copter(223, "Mi8 Flyable");
         Flyable flyablePlane = new Plane(3452, "Boeing 837 Flyable");
         Flyable flyableRocket = new Rocket(7623, "Super Heavy Flyable");
