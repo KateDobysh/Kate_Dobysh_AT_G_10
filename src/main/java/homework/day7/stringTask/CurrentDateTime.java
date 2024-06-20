@@ -1,12 +1,10 @@
 package homework.day7.stringTask;
 
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-
 public class CurrentDateTime {
-    public static void main(String[] args) {
+    public static void currentDT() {
 
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy, HH 'hours' mm 'minutes'");

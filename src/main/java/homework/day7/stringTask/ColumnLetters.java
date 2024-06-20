@@ -1,7 +1,7 @@
 package homework.day7.stringTask;
 
 public class ColumnLetters {
-        public static void main(String[] args) {
+        public static void columnsTask() {
             String text = "I can sit and look at it for hours.";
 
             char[] lettersInColumn = text.toCharArray();

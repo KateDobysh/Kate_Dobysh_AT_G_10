@@ -1,20 +1,18 @@
 package homework.day7.stringTask;
 
-import static java.awt.SystemColor.text;
-
 public class FindNumbers {
-    public static void main(String[] args) {
-        String textWithNumbers = "I can run 10 mins and rest 60 min";
+    public static void numbersSearch() {
+        String textWithNumbers = "I can run 20 mins and rest 60 min";
         String[] words = textWithNumbers.split(" ");
 
         for (String word : words) {
             if (isNumeric(word)) {
-                System.out.println(word);
+                System.out.print(word + " ");
             }
         }
     }
 
-    public static boolean isNumeric(String str) {
-        return str.matches("\\d+");
+    public static boolean isNumeric(String numbersInTheText) {
+        return numbersInTheText.matches("\\d+");
     }
 }
