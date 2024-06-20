@@ -3,9 +3,8 @@ package homework.day5.playground.essence.creatures;
 public class Vegetable extends Plant {
     protected String name;
 
-    public Vegetable(int mass, String name, String name1) {
-        super(mass, name);
-        this.name = name1;
+    public Vegetable(int mass) {
+        super(mass);
     }
 
     @Override
