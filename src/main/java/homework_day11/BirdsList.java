@@ -26,5 +26,14 @@ public class BirdsList {
             }
         }
         System.out.println("Amount of birds that contain more than 1 vowel: " + countBirds);
+        for (int i=0; i<birds.size();i++){
+            String listOfBirds = birds.get(i);
+            System.out.print(listOfBirds + " ");
+        }
+        System.out.println();
+        birds.set(3, "Синица");
+        for (String bird : birds){
+            System.out.print(bird + " ");
+        }
     }
 }
